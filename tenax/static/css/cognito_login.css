@@ -1,30 +1,4 @@
 /* styles.css */
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #000;
-    color: #fff;
-    font-family: Arial, sans-serif;
-}
-
-.login-container {
-    background-color: #333;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 100%;
-    max-width: 400px;
-}
-
-h1 {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
 form {
     display: flex;
     flex-direction: column;
@@ -58,8 +32,18 @@ button {
     color: #fff;
     font-size: 16px;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 button:hover {
     background-color: #005f73;
+}
+
+a {
+    color: #008CBA;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
