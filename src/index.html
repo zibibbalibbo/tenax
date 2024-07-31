@@ -43,12 +43,44 @@
             background-color: #0056b3;
         }
     </style>
+    <!-- Include AWS Amplify Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@aws-amplify/core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@aws-amplify/auth"></script>
 </head>
 <body>
 <div class="cta-container">
     <h1>Unisciti a Noi!</h1>
     <p>Scopri di più e inizia la tua avventura con noi oggi stesso.</p>
     <a href="https://tenax.auth.eu-west-2.amazoncognito.com/login?client_id=34vorsr3caj9bni4thslmm2hse&response_type=code&scope=email+openid+phone&redirect_uri=https%3A%2F%2Fzibibbalibbo.github.io%2Ftenax%2Fsrc%2Fprofile.html">Iscriviti Ora</a>
+    <div id="user-info" style="margin-top: 20px;"></div>
 </div>
+
+<script>
+    // Configure AWS Amplify
+    Amplify.configure({
+        Auth: {
+            region: 'eu-west-2', // Esempio: 'us-east-1'
+            userPoolId: 'eu-west-2_qBvqHto9W', // Esempio: 'us-east-1_XXXXXXXXX'
+            userPoolWebClientId: '34vorsr3caj9bni4thslmm2hse', // Esempio: 'xxxxxxxxxxxxxxxxxxxxxxxxxx'
+        }
+    });
+
+    // Function to get user info
+    async function getUserInfo() {
+        try {
+            const user = await Amplify.Auth.currentAuthenticatedUser();
+            const userInfo = user.attributes;
+            document.getElementById('user-info').innerHTML = `
+                    <p><strong>Benvenuto, ${userInfo.email}!</strong></p>
+                    <p>Nome: ${userInfo.given_name} ${userInfo.family_name}</p>
+                `;
+        } catch (error) {
+            console.log('Utente non autenticato', error);
+        }
+    }
+
+    // Call the function to get user info when the page loads
+    window.onload = getUserInfo;
+</script>
 </body>
 </html>
