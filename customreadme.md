@@ -1,5 +1,7 @@
 # Link utili
 
 * Preview sito su github https://zibibbalibbo.github.io/tenax/src/index.html
-* login su Cognito https://tenax.auth.eu-west-2.amazoncognito.com/login?client_id=34vorsr3caj9bni4thslmm2hse&response_type=code&scope=email+openid+phone&redirect_uri=http%3A%2F%2Flocalhost%3A63342%2F
-
+* Login su Cognito https://tenax.auth.us-east-1.amazoncognito.com/login?client_id=2cso17vr764m158rcukqvnvm7d&response_type=code&scope=email&redirect_uri=https%3A%2F%2Fzibibbalibbo.github.io%2Ftenax%2Fsrc%2Fprofile.html
+* API
+* * generica https://aw53pvvt09.execute-api.us-east-1.amazonaws.com/Prod
+* * endpoint https://aw53pvvt09.execute-api.us-east-1.amazonaws.com/Prod/pets 
