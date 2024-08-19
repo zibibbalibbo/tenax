@@ -1,19 +1,27 @@
-import {
-    CognitoUserPool,
-    CognitoUserAttribute,
-    CognitoUser,
-} from 'amazon-cognito-identity-js';
-
 export function LoginChecker() {
-    // Configure AWS Amplify
-    Amplify.configure({
-        Auth: {
-            region: 'eu-west-2', // Esempio: 'us-east-1'
-            userPoolId: 'eu-west-2_qBvqHto9W', // Esempio: 'us-east-1_XXXXXXXXX'
-            userPoolWebClientId: '34vorsr3caj9bni4thslmm2hse', // Esempio: 'xxxxxxxxxxxxxxxxxxxxxxxxxx'
-        }
-    });
+    const myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+    const raw = "";
 
+    const requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        body: raw,
+        redirect: "follow"
+    };
+
+    const searchParams = new URLSearchParams(window.location.search);
+    if(searchParams.has('code')) {
+        let url = "https://tenax.auth.us-east-1.amazoncognito.com/oauth2/token";
+        url += "?client_id=2cso17vr764m158rcukqvnvm7d";
+        url += "&grant_type=authorization_code";
+        url += "&code="+searchParams.get('code');
+        url += "&redirect_uri=https://zibibbalibbo.github.io/tenax/src/profile.html";
+
+        fetch(url, requestOptions)
+            .then((result) => console.log(result))
+            .catch((error) => console.error(error));
+    }
 
     return <div className="cta-container">
         <h1>Unisciti a Noi!</h1>

@@ -2,7 +2,9 @@
   "name": "tenax",
   "source": [
     "src/test.html",
-    "src/home.html"
+    "src/home.html",
+    "src/index.html",
+    "src/profile.html"
   ],
   "scripts": {
     "clean:output": "rimraf dist",
