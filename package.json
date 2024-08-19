@@ -9,7 +9,7 @@
   "scripts": {
     "clean:output": "rimraf dist",
     "start": "npm run clean:output && parcel",
-    "build": "npm run clean:output && parcel build"
+    "build": "npm run clean:output && parcel build --public-url ./"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.12.0",
