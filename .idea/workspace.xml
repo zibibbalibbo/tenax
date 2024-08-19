@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5dd99f70-5e6a-4345-a393-eba0dd5c0b25" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/src/js/profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/home.d8cffb4c.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/home.d8cffb4c.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/home.d8cffb4c.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/home.d8cffb4c.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/components/loginChecker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/loginChecker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +55,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "npm.build.executor": "Run",
+    "npm.clean:output.executor": "Run",
     "npm.start.executor": "Run",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -86,6 +81,16 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="clean:output" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="clean:output" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -98,8 +103,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.clean:output" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -122,7 +128,7 @@
       <workItem from="1721942217752" duration="5526000" />
       <workItem from="1722459921881" duration="2955000" />
       <workItem from="1724018855930" duration="3150000" />
-      <workItem from="1724103143440" duration="3526000" />
+      <workItem from="1724103143440" duration="3805000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -156,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724020878675</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="test">
+      <option name="closed" value="true" />
+      <created>1724107115346</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724107115346</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

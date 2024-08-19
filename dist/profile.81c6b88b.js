@@ -1,0 +1,2 @@
+var e=globalThis,r={},t={},o=e.parcelRequire4226;null==o&&((o=function(e){if(e in r)return r[e].exports;if(e in t){var o=t[e];delete t[e];var n={id:e,exports:{}};return r[e]=n,o.call(n.exports,n,n.exports),n.exports}var i=Error("Cannot find module '"+e+"'");throw i.code="MODULE_NOT_FOUND",i}).register=function(e,r){t[e]=r},e.parcelRequire4226=o),o.register;var n=o("ayMG0"),i=o("aRPiL"),a=o("bhsxJ");const l=document.getElementById("app");(0,i.createRoot)(l).render((0,n.jsx)(a.LoginChecker,{}));
+//# sourceMappingURL=profile.81c6b88b.js.map

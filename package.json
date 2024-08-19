@@ -1,10 +1,10 @@
 {
   "name": "tenax",
   "source": [
+    "src/profile.html",
     "src/test.html",
     "src/home.html",
-    "src/index.html",
-    "src/profile.html"
+    "src/index.html"
   ],
   "scripts": {
     "clean:output": "rimraf dist",
